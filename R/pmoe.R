@@ -252,9 +252,12 @@ pmoe.default = function(X, y, colsGating = 1:ncol(X), colsExperts = 1:ncol(X), i
     stop("'lambda' must be >= 0")
   if (length(lambda) == 1) {
     lambda = rep(lambda, 2 + J)
-  } else if (length(lambda) != 2 + J) {
-    stop("'length(lambda)' is not 2 + J")
+  } else if (length(lambda) != 1 + J) {
+    stop("'length(lambda)' is not 1 + J")
   }
+#  } else if (length(lambda) != 2 + J) {
+#    stop("'length(lambda)' is not 2 + J")
+#  }
 
   ## alpha
   if (any(alpha < 0 | alpha > 1))
