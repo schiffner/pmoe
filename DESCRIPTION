@@ -1,0 +1,22 @@
+Package: PMOE
+Version: 0.0-1
+Date: 2015-08-01
+Title: Penalized Mixtures of Experts
+Description: This package implements the logistic penalized mixture of experts
+    model for classification.
+Authors@R: person("Julia", "Schiffner", email = "schiffner@math.uni-duesseldorf.de",
+  role = c("aut", "cre"))
+Author: Julia Schiffner [aut,cre]
+Maintainer: Julia Schiffner <schiffner@math.uni-duesseldorf.de>
+URL: https://github.com/schiffner/pmoe
+Depends:
+    R (>= 3.0.2),
+    ipoptr
+Imports:
+    stats,
+    Formula,
+    GenSA
+Suggests:
+    glmnet
+License: GPL (>=2)
+RoxygenNote: 5.0.1
