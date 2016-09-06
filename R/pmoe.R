@@ -503,7 +503,8 @@ pmoe.default = function(X, y, colsGating = 1:ncol(X), colsExperts = 1:ncol(X), i
     "bound_relax_factor" = 0,
     "mu_strategy" = 'adaptive',
     "max_iter" = ipopt.max.iter,
-    "tol" = ipopt.tol#,
+    "tol" = ipopt.tol,
+		print_frequency_iter = 20
     #acceptable_tol = 1e-10
   )
 
